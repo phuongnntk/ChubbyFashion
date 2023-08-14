@@ -19,7 +19,6 @@ public interface ProductsRepo extends JpaRepository<Products, Integer>{
 
 	List<Products> findByCategoryId(Integer categoryId , Sort sort);
 
-
 	Page<Products> findAll(Pageable pageable);
 
 	Page<Products> findByCategoryId(Integer categoryId, Pageable pageable);
